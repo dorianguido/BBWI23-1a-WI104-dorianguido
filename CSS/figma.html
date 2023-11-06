@@ -10,12 +10,83 @@
 
     body {
 
+    
+
         font-family: 'Calibri';
     }
 
+    div.rectangel{
+      width: 370px;
+      height: 400px;
+      flex-shrink: 0;
+      border-radius: 4px;
+      background: #FFF;
 
-      .eine-zeile {
+      /* Shadow 1 */
+      box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.14)
+    }
+
+    summary.billing_summary{
+      color: #000;
+      font-family: Open Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px;
+    }
+
+    li.subtotal_1{
+      color: var(--dark-dark-3, #4F4F4F);
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+    }
+
+    li.discount_1{
+
+      color: var(--dark-dark-3, #4F4F4F);
+      font-family: Open Sans;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+
+    }
+      
+    li.warranty_platinum{
+      color: #4F4F4F;
+      font-family: Open Sans;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+
+
+    }
+    label.order_command{
+       
+
+
+      }
+
+      label.check_box{
+        display: flex;
+        width: 316px;
+        align-items: center;
+        gap: 8px;
+      }
+
+
+      button.pay_button  {
         display: block;
+        width: 333px;
+        height: 40px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        background-color: blue;
+        color: #f6f6f6;
+        border-color: #1d68cd;
     }  
 
 
@@ -26,24 +97,24 @@
    </style>
 </head>
 <body>
-
-    
+  <div class="rectangle">
    <details>
-       <summary>Billing Summary</summary>
+       <summary class="billing_summary">Billing Summary</summary>
        <ul>
-           <li>Subtotal<span>$3370</span></li>
-           <li>Subtotal<span>$3370</span></li>
-           <li>Subtotal<span>$3370</span></li>
+           <li class="subtotal_1">Subtotal<span>$3370.99</span></li>
+           <li class="discount_1"> Discount<span>-$749.99</span></li>
+           <li class="warranty_platinum"> Warranty (Platinum)<span>$259.99</span></li>
            <li>Subtotal<span>$3370</span></li>
        </ul>
    </details>
 
-   <label class="eine-zeile">Order comment</label>
+   <label class="eine-zeile order_command">Order comment</label>
    <textarea class="eine-zeile">
 
    </textarea>
-   <label class="eine-zeile"><input type="checkbox"> Please check to acknowledge our Privacy & Terms Policy</label>
-   <button class="eine-zeile">Pay $3,439.00</button>
+   <label class= "eine-zeile check_box"><input type="checkbox"> Please check to acknowledge our Privacy & Terms Policy</label>
+  <button class="eine-zeile pay_button">Pay $3,439.00</button>
+   
 </div>
 </body>
 </html>
